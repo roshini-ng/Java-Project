@@ -11,7 +11,6 @@ public class Booking {
     public int days() {
         LocalDate checkIn = LocalDate.parse(checkInDate);
         LocalDate checkOut = LocalDate.parse(checkOutDate);
-
         return (int)ChronoUnit.DAYS.between(checkIn, checkOut);
     }
 }
